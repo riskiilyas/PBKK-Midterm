@@ -32,7 +32,9 @@ Route::get('/upload', function () {
 
 Route::get('/edit/{id}', function ($id) {
     $item = \App\Models\Item::find($id);
-    return view('edit', ['item' => $item]);
+    $conditions = \App\Models\Condition::all();
+    $types = \App\Models\ItemType::all();
+    return view('edit', ['edititem' => $item, 'conditions' => $conditions, 'item_types' => $types]);
 })->middleware(['auth', 'verified'])->name('edit');
 
 Route::get('/delete/{id}', function ($id) {
@@ -46,6 +48,7 @@ Route::get('/delete/{id}', function ($id) {
 })->middleware(['auth', 'verified'])->name('delete');
 
 Route::post('/upload', [UploadController::class, 'store'])->name('upload')->middleware(['auth', 'verified']);
+Route::post('/edit', [UploadController::class, 'edit'])->name('edit')->middleware(['auth', 'verified']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -21,7 +21,7 @@
                                 <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
                                     <div class="card-body p-4 p-md-5">
                                             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Upload File</h3>
-                                            <form  id="registrationForm" method="POST" enctype="multipart/form-data">
+                                            <form  id="registrationForm" action="/edit?id={{$edititem->id}}" method="POST" enctype="multipart/form-data">
                                                 @csrf
 {{--                                                <div>--}}
 {{--                                                    <div class="mb-4 d-flex justify-content-center">--}}

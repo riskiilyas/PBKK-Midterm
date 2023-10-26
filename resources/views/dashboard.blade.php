@@ -71,7 +71,7 @@
                                                                 </th>
                                                                 <td>
                                                                     <div class="event-img">
-                                                                        <img src="{{ asset('/storage/'.$file->img) }}"  style="width: 100px" alt="Your Image">
+                                                                        <img src="{{ asset($file->img) }}"  style="width: 100px" alt="Your Image">
                                                                     </div>
                                                                 </td>
                                                                 <td>
