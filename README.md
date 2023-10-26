@@ -4,6 +4,9 @@
 ## UPLOAD SUCCESS
 ![image](https://github.com/riskiilyas/PBKK-Midterm/assets/71499142/fe757f40-db78-43e6-a2c5-949cdbf4a702)
 
+## UPLOAD FAILED
+![image](https://github.com/riskiilyas/PBKK-Midterm/assets/71499142/1e51ad2b-7652-451c-91e2-139b139fa79a)
+
 
 ## EDIT
 ![image](https://github.com/riskiilyas/PBKK-Midterm/assets/71499142/6cba9162-30cc-4931-942c-56ea37edf9d8)
