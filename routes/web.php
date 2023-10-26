@@ -21,6 +21,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     $items = \App\Models\Item::all();
+
     return view('dashboard', ['items' => $items]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 

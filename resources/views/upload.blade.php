@@ -9,7 +9,13 @@
 
     @if(session('success'))
         <div class="alert alert-success">
-            {{ session('success') }}
+            <h1>{{ session('success') }}</h1>
+        </div>
+    @endif
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <h1>Failed Upload, Please check your data!</h1>
         </div>
     @endif
 
